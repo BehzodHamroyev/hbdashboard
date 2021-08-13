@@ -3,7 +3,7 @@ import SideBarWrapper from './SideBarWrapper';
 import dataDashboard from '../../datas/dataDashboard';
 import { Link, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import '../../App.css';
+import user from './user.jpg'
 
 const SideBar = () => {
   const { page } = useParams()
@@ -11,6 +11,10 @@ const SideBar = () => {
   const sidebar = useSelector(state => state.sidebar)
   console.log(sidebar);
   return sidebar && <SideBarWrapper sidebar={sidebar} className="shadow">
+    <div className="user d-flex container mt-5 ms-3 align-items-center">
+      <img src={user} className="logo me-3 " alt="" />
+   <h5 className="userName">Hamroyev Behzod</h5>
+    </div>
     <ul className="menu">
       {
         dataDashboard.map((v, i) => {

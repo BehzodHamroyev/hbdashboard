@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const SideBarWrapper = styled.div`
   & {
+    overflow-x: hidden;
     ::-webkit-scrollbar-track {
       background: #f1f1f1 !important;
     }
@@ -48,6 +49,17 @@ const SideBarWrapper = styled.div`
           background-color: #85888b8d;
           color: #ffffff !important;
         }
+      }
+    }
+    .user {
+      width: 600px;
+      height: 30px;
+      img.logo {
+        width: 50px !important;
+        border-radius: 50%;
+      }
+      .userName{
+        color: #33c096;
       }
     }
   }
