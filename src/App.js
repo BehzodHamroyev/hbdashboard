@@ -17,6 +17,9 @@ function App() {
           <Route path="/dashboard/:page" exact>
             <Dashboards />
           </Route>
+          <Route path="/dashboard/:page/:id" exact>
+            <h1>id</h1>
+          </Route>
         </Switch>
       </div>
     </Provider>

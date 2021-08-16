@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../Components/Navbar/Navbar';
-import SideBar from '../Components/SideBar/SideBar';
+import Navbar from '../../Components/Navbar/Navbar';
+import SideBar from '../../Components/SideBar/SideBar';
 import DashboardWrapper from './DashboardWrapper';
 
 const Dashboard = (props) => {

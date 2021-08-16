@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Dashboard from '../../Containers/Dashboard';
+import Dashboard from '../../Containers/Dashboard/Dashboard';
 import Albums from '../Albums/Albums';
 import Home from '../Home/Home';
 import Posts from '../Posts/Posts';

@@ -23,7 +23,7 @@ const SideBarWrapper = styled.div`
     overflow-y: auto;
     position: sticky;
     top: 0;
-    z-index: 2000;
+    z-index: 3000;
     transition: all 1s linear;
 
     .active {
@@ -36,8 +36,10 @@ const SideBarWrapper = styled.div`
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      margin:0;
+      padding:0;
       .listItem {
-        width: 100%;
+        width: 250px;
         padding: 10px 40px;
         border-radius: 10px;
         text-align: center;
@@ -58,7 +60,7 @@ const SideBarWrapper = styled.div`
         width: 50px !important;
         border-radius: 50%;
       }
-      .userName{
+      .userName {
         color: #33c096;
       }
     }
@@ -68,11 +70,12 @@ const SideBarWrapper = styled.div`
       display: ${(props) => {
         return (props.sidebar && 'block') || 'none';
       }};
-      position: absolute;
-      height: 100vh;
+      position: fixed;
+      min-height: 120vh;
       background-color: #e9e5e5dc;
-      top: 0;
+      top: 80px;
       transition: all linear 3s;
+      z-index: 2000;
     }
   }
 `;

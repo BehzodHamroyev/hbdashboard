@@ -19,7 +19,7 @@ const SideBar = () => {
       {
         dataDashboard.map((v, i) => {
           return <li key={i}>
-            <Link className={`${page == v.to && "active" || ""} listItem text-start`} to={`/dashboard/${v.to}`}><div className="d-flex justify-content-between align-items-center "><div className="me-2 text-start">{v.icon}</div>{v.title}</div></Link>
+            <Link className={`${page == v.to && "active" || ""} listItem text-start`} to={`/dashboard/${v.to}`}><div className="d-flex justify-content-center align-items-center "><div className="me-2 text-start">{v.icon}</div>{v.title}</div></Link>
           </li>
         })
       }
